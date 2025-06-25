@@ -1,0 +1,16 @@
+body{
+    align-items: center;
+    font-family: "inter",sans-serif;
+    background-color: rgb(4, 255, 0);
+    background-image: url(https://img.freepik.com/free-vector/gradient-background-summer-season-celebration_23-2150315545.jpg?semt=ais_hybrid&w=740);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items:center ;
+    min-height: 100vh;
+    margin: 0%;
+    padding: 20%;
+    box-sizing: border-box;
+    display: flex;
+
+}

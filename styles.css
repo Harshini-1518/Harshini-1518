@@ -1,0 +1,19 @@
+h1 {
+    color:skyblue;
+    font-size: 30px;
+}
+p {
+    color:red;
+}
+div{
+    background-color:aqua;
+    height:100px;
+    width: 100px;
+    border: 2px;
+    border-style: dashed;
+    border-color:black;
+}
+button{
+    bsckground-color:blue;
+    color:red;
+}

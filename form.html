@@ -1,0 +1,53 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <h1>User Personal Information</h1>
+            <label for="name">Enter your full name:</label>
+            <input type="text" id="name" required />
+            <br><br>
+        <label for="email"></label>Enter your email: </label>
+        <input type="email" id="email" required/>
+        <br><br>
+        <label for="password"> Enter your password:</label>
+        <input type="password"  id="password" required />
+        <br><br>
+        <label for="confirmpassword">Confirm your password:</label>
+        <input type="confirm password" id="confirm password" required/>
+        <br><br>
+        <label for="phone">Enter your phone number:</label>
+        <input type="tel" id="phone" pattern="[0-9]{10}" required/>
+        <br><br>
+         
+        <label>Enter your gender:</label>
+        <div class="gender group">
+            <input type="radio" name="gender" va;ue="male" id="male" required/>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="female" id="female" required/>
+           <lebel for="female">Female</label>
+            <input type="radio" name="gender" value="others" id="others" required/>
+
+            <label for="others">others</label>
+            </div>
+
+            <label for="dob">Enter your Date of Birth</label>
+            <input type="date" id="dob" required/>
+            <br><br>
+            <label for="address">Enter your Address:</label>
+            <textarea id="address" name="address" required></textarea>
+            <br>
+
+    
+        <center><input type="Submit" value="Submit" /></center>
+
+
+        </fieldset>
+        </form>
+</body>
+</html>
