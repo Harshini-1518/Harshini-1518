@@ -1,0 +1,39 @@
+body {
+      font-family: Arial, sans-serif;
+      background-color: skyblue;
+      padding: 20px;
+    }
+    h2 {
+      color: red;
+    }
+    ul.checklist {
+      list-style: none;
+      padding-left: 0;
+      max-width: 300px;
+      margin: 0;
+    }
+    ul.checklist li {
+      background: green;
+      margin: 8px 0;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      user-select: none;
+      transition: background-color 0.2s ease;
+    }
+    ul.checklist li:hover {
+      background-color: orange;
+    }
+    ul.checklist input[type="checkbox"] {
+      margin-right: 12px;
+      cursor: pointer;
+      width: 18px;
+      height: 18px;
+    }
+    ul.checklist label {
+      flex: 1;
+      cursor: pointer;
+    }
