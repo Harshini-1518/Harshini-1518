@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AJIO Webpage</title>
+  <link rel="stylesheet" href="ajio6.css">
+</head>
+<body>
+<center>
+  <header>
+    <div class="logo">AJIO</div>
+    <nav>
+      <ul>
+        <li><a href="#">MEN</a></li>
+        <li><a href="#">WOMEN</a></li>
+        <li><a href="#">KIDS</a></li>
+        <li><a href="#">SALE</a></li>
+        <li><a href="#">NEW ARRIVALS</a></li>
+      </ul>
+    </nav>
+    <div class="search-cart">
+      <input type="text" id="searchBox" placeholder="Search AJIO" />
+      <button onclick="search()">Search</button>
+      <a href="cart.html">View Cart</a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <img src="ajio img.jpg" alt="Banner" />
+  </section>
+
+  <section class="categories">
+    <h2>Top Categories</h2>
+    <div class="category-grid">
+      <a class="category" href="#men">Men's Clothing</a>
+      <a class="category" href="#women">Women's Clothing</a>
+      <a class="category" href="#kids">Kid's Clothing</a>
+      <a class="category" href="#accessories">Accessories</a>
+    </div>
+  </section>
+
+  <section class="products" id="men">
+    <h2>Men's Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="4.avif" alt="Men's Jacket"/>
+        <p>Men's Jacket</p>
+        <span>₹1999</span>
+        <button onclick="addToCart('Men\'s Jacket', 1999)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="ff.avif" alt="T-Shirt"/>
+        <p>T-Shirt</p>
+        <span>₹1499</span>
+        <button onclick="addToCart('T-Shirt', 1499)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="3.avif" alt="Shirt"/>
+        <p>Shirt</p>
+        <span>₹599</span>
+        <button onclick="addToCart('Shirt', 599)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+  <section class="products" id="women">
+    <h2>Women's Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="5.avif" alt="Dress"/>
+        <p>Dress</p>
+        <span>₹1999</span>
+        <button onclick="addToCart('Dress', 1999)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="2.avif" alt="Kurthi"/>
+        <p>Kurthi</p>
+        <span>₹1499</span>
+        <button onclick="addToCart('Kurthi', 1499)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="1.avif" alt="Women's Dress"/>
+        <p>Women's Dress</p>
+        <span>₹599</span>
+        <button onclick="addToCart('Women\'s Dress', 599)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="products" id="kids">
+    <h2>Kid's Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="k2.avif" alt="Pant & T-Shirt set"/>
+        <p>Pant & T-Shirt set</p>
+        <span>₹1999</span>
+        <button onclick="addToCart('Pant & T-Shirt set', 1999)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="k1.avif" alt="Jacket & Jeans"/>
+        <p>Jacket & Jeans</p>
+        <span>₹1499</span>
+        <button onclick="addToCart('Jacket & Jeans', 1499)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="k3.avif" alt="Hoodie"/>
+        <p>Hoodie</p>
+        <span>₹599</span>
+        <button onclick="addToCart('Hoodie', 599)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+  <section class="products" id="accessories">
+    <h2>Accessories</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="a1.avif" alt="Brush Holder"/>
+        <p>Brush Holder</p>
+        <span>₹1999</span>
+        <button onclick="addToCart('Brush Holder', 1999)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="a2.avif" alt="Cleaning Cloth"/>
+        <p>Cleaning Cloth</p>
+        <span>₹1499</span>
+        <button onclick="addToCart('Cleaning Cloth', 1499)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="a3.avif" alt="Dustbin"/>
+        <p>Dustbin</p>
+        <span>₹599</span>
+        <button onclick="addToCart('Dustbin', 599)">Add to Cart</button>
+        
+      </div>
+
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2025 Harshini. All rights reserved.</p>
+  </footer>
+
+  <script src="ajio6.js"></script>
+</center>
+</body>
+</html>
