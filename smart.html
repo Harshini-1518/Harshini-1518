@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Dashboard</title>
+  <link rel="stylesheet" href="smart.css" />
+</head>
+<body>
+  <div class="dashboard">
+    <h1>Smart Dashboard</h1>
+
+    <div class="weather-card">
+      <h2>Weather</h2>
+      <form id="weatherForm">
+        <input type="text" id="cityInput" placeholder="Enter city..." required />
+        <button type="submit">Search</button>
+      </form>
+      <div id="weatherData" class="weather-info">
+        <p>City: <span id="cityName">-</span></p>
+        <p>Temperature: <span id="temperature">-</span> °C</p>
+        <p>Condition: <span id="condition">-</span></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="smart.js"></script>
+</body>
+</html>
