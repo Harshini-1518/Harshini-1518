@@ -21,11 +21,9 @@
     <div class="search-cart">
       <input type="text" id="searchBox" placeholder="Search AJIO" />
       <button onclick="search()">Search</button>
-      <div class="cart-container">
-        <button id="cartBtn">Cart (<span id="cartCount">0</span>)</button>
-        <div id="cartDropdown" class="cart-dropdown"></div>
-      </div>
+      <a href="cart.html">View Cart</a>
     </div>
+    
   </header>
 
   <center>
@@ -58,19 +56,19 @@
       <div class="product-card" data-category="men">
         <img src="4.avif" alt="Men's Jacket"/>
         <p>Men's Jacket</p>
-        <span>₹1999</span>
+        <span>₹1499</span>
         <button class="add-to-cart">Add to Cart</button>
       </div>
       <div class="product-card" data-category="men">
         <img src="ff.avif" alt="T-Shirt"/>
         <p>T-Shirt</p>
-        <span>₹1499</span>
+        <span>₹1199</span>
         <button class="add-to-cart">Add to Cart</button>
       </div>
       <div class="product-card" data-category="men">
         <img src="3.avif" alt="Shirt"/>
         <p>Shirt</p>
-        <span>₹2599</span>
+        <span>₹1599</span>
         <button class="add-to-cart">Add to Cart</button>
       </div>
     </div>
@@ -82,7 +80,7 @@
       <div class="product-card" data-category="women">
         <img src="5.avif" alt="Dress"/>
         <p>Dress</p>
-        <span>₹1999</span>
+        <span>₹999</span>
         <button class="add-to-cart">Add to Cart</button>
       </div>
       <div class="product-card" data-category="women">
@@ -94,7 +92,7 @@
       <div class="product-card" data-category="women">
         <img src="1.avif" alt="Women's Dress"/>
         <p>Women's Dress</p>
-        <span>₹599</span>
+        <span>₹1199</span>
         <button class="add-to-cart">Add to Cart</button>
       </div>
     </div>
@@ -148,10 +146,20 @@
     </div>
   </section>
 
+<div id="offerPopup" class="modal">
+  <div class="modal-content">
+    <span id="closeOffer" class="close-btn">&times;</span>
+    <h2>Special Offer!</h2>
+    <p>Enjoy a flat <strong>25% OFF</strong> on your next purchase with code <strong>AJIO25</strong>.</p>
+    <button id="shopNowBtn">Shop Now</button>
+  </div>
+</div>
+
   <footer>
     <p>&copy; 2025 Harshini. All rights reserved.</p>
   </footer>
 
   <script src="ajio2.js"></script>
+  <script src="ajio3.js"></script>
 </body>
 </html>

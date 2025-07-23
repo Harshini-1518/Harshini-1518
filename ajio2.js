@@ -37,7 +37,7 @@ function updateCartUI() {
 function addToCart(name, price) {
   cart.push({ name, price });
   updateCartUI();
-  cartDropdown.style.display = "block"; // Show cart on add
+  cartDropdown.style.display = "block";
 }
 
 window.removeFromCart = function(index) {
@@ -45,19 +45,15 @@ window.removeFromCart = function(index) {
   updateCartUI();
 };
 
-// Toggle cart dropdown on cart button click
 cartBtn.addEventListener("click", () => {
   cartDropdown.style.display = cartDropdown.style.display === "block" ? "none" : "block";
 });
-
-// Close cart dropdown if clicked outside
 window.addEventListener("click", (event) => {
   if (!event.target.closest(".cart-container") && event.target !== cartBtn) {
     cartDropdown.style.display = "none";
   }
 });
 
-// Search function to filter visible products
 function search() {
   const query = searchBox.value.toLowerCase();
   const products = document.querySelectorAll(".product-card");
@@ -66,19 +62,14 @@ function search() {
     product.style.display = name.includes(query) ? "" : "none";
   });
 }
-window.search = search; // Make search globally available for onclick
-
-// Handle category link clicks - open modal popup with products from that category
+window.search = search; 
 categoryLinks.forEach(link => {
   link.addEventListener("click", e => {
     e.preventDefault();
     const category = link.getAttribute("data-category");
     modalTitle.textContent = category.charAt(0).toUpperCase() + category.slice(1) + " Products";
 
-    // Clear previous modal products
     modalProducts.innerHTML = "";
-
-    // Find products from the main page with matching category
     const products = allProducts.querySelectorAll(`.product-card[data-category="${category}"]`);
     products.forEach(prod => {
       const clone = prod.cloneNode(true);
@@ -96,19 +87,16 @@ categoryLinks.forEach(link => {
   });
 });
 
-// Close modal
+
 closeModal.addEventListener("click", () => {
   categoryModal.style.display = "none";
 });
-
-// Close modal if click outside modal content
 window.addEventListener("click", (event) => {
   if (event.target === categoryModal) {
     categoryModal.style.display = "none";
   }
 });
 
-// Attach add to cart handlers on main page product buttons
 document.querySelectorAll("#allProducts .product-card .add-to-cart").forEach(button => {
   button.addEventListener("click", e => {
     const productCard = e.target.closest(".product-card");
@@ -118,6 +106,4 @@ document.querySelectorAll("#allProducts .product-card .add-to-cart").forEach(but
     addToCart(name, price);
   });
 });
-
-// Initialize cart UI
 updateCartUI();
